@@ -5,6 +5,8 @@ const initialState = {};
 
 export default createReducer(initialState, {
   [actionTypes.GET_APP_DATA]: (state, payload) => {
-    return payload;
+    return {
+      ...payload
+    };
   }
 })

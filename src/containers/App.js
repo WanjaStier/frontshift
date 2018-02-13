@@ -2,14 +2,23 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
+import { getAppData } from '../actions/app-actions';
+import FSLogo from '../components/fs-logo';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.test = "WDasurst";
-
-    this.num = 1+4;
+  componentDidMount() {
+    this.props.getAppData();
   }
+
+  getListItems() {
+    if (this.props.appData.data) {
+      return this.props.appData.data.clients.map((client, index) => (
+        <li key={index}>{ client.name }</li>
+      ))
+    }
+   return '';
+  }
+
   render() {
     return (
       <div className="App">
@@ -18,12 +27,14 @@ class App extends Component {
           <h1 className="App-title">`Fuck yeah {this.num}`</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <FSLogo/>
+        <ul>
+          {this.getListItems()}
+        </ul>
       </div>
     );
   }
 }
 
-
-export default connect(state => state)(App);
+export default connect(state => state, { getAppData })(App);

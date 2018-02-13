@@ -8,7 +8,6 @@ import { createStore, applyMiddleware  } from 'redux';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './reducers';
-import { getAppData } from './actions/app-actions';
 
 const store = createStore(
   rootReducer,
@@ -19,7 +18,7 @@ const render = Component => {
   ReactDOM.render(
     <AppContainer>
       <Provider store={store}>
-        <App />
+        <Component />
       </Provider>
     </AppContainer>,
     document.getElementById('root'),
@@ -27,7 +26,6 @@ const render = Component => {
 };
 
 render(App);
-store.dispatch(getAppData());
 
 // Webpack Hot Module Replacement API
 if (module.hot) {

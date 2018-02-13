@@ -1,10 +1,16 @@
 {
   "clients": [
     {
-      "name": "Sky"
+      "name": "Client 1"
     },
     {
-      "name": "McLaren"
+      "name": "Client 2"
+    },
+    {
+      "name": "Client 3"
+    },
+    {
+      "name": "Client 4"
     }
   ]
 }
