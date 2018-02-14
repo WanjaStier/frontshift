@@ -1,4 +1,26 @@
 {
+  "navItems": [
+    {
+      "key": "",
+      "label": "Home",
+      "section": "Home"
+    },
+    {
+      "key": "services",
+      "label": "Services",
+      "section": "Services"
+    },
+    {
+      "key": "work",
+      "label": "Work",
+      "section": "Work"
+    },
+    {
+      "key": "contact",
+      "label": "Contact",
+      "section": "Contact"
+    }
+  ],
   "clients": [
     {
       "name": "Client 1"

@@ -1,40 +1,31 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
-import { getAppData } from '../actions/app-actions';
-import FSLogo from '../components/fs-logo';
+import { Switch, Route } from 'react-router-dom';
+import FSLogo from '../components/FSLogo';
+import Nav from '../components/Nav';
+import Home from '../components/Home';
+import Contact from '../components/Contact';
 
 class App extends Component {
-  componentDidMount() {
-    this.props.getAppData();
-  }
-
   getListItems() {
-    if (this.props.appData.data) {
-      return this.props.appData.data.clients.map((client, index) => (
-        <li key={index}>{ client.name }</li>
-      ))
-    }
-   return '';
+    return this.props.appData.data.clients.map((client, index) => (
+      <li key={index}>{client.name}</li>
+    ))
   }
 
   render() {
-    return (
+    return this.props.appData.data ? (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">`Fuck yeah {this.num}`</h1>
-        </header>
-        <p className="App-intro">
-        </p>
+        <Nav items={this.props.appData.data.navItems}/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/contact" component={Contact}/>
+        </Switch>
         <FSLogo/>
-        <ul>
-          {this.getListItems()}
-        </ul>
       </div>
-    );
+    ) : null;
   }
 }
 
-export default connect(state => state, { getAppData })(App);
+export default connect(state => state)(App);
