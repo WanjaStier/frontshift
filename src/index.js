@@ -9,8 +9,6 @@ import { createStore, applyMiddleware, compose  } from 'redux';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './reducers';
-import { getAppData } from './actions/app-actions';
-
 
 function doCreateStore() {
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -26,7 +24,6 @@ function doCreateStore() {
 
 async function render(Component)  {
   const store = doCreateStore();
-  await store.dispatch(getAppData());
   ReactDOM.render(
     <AppContainer>
       <Provider store={store}>

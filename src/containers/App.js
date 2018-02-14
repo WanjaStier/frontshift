@@ -6,12 +6,11 @@ import FSLogo from '../components/FSLogo';
 import Nav from '../components/Nav';
 import Home from '../components/Home';
 import Contact from '../components/Contact';
+import { getAppData } from '../actions/app-actions';
 
 class App extends Component {
-  getListItems() {
-    return this.props.appData.data.clients.map((client, index) => (
-      <li key={index}>{client.name}</li>
-    ))
+  componentDidMount() {
+    this.props.getAppData();
   }
 
   render() {
@@ -28,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default connect(state => state)(App);
+export default connect(state => state, {getAppData})(App);
