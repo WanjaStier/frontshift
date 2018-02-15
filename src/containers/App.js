@@ -16,11 +16,13 @@ class App extends Component {
   render() {
     return this.props.appData.data ? (
       <div className="App">
-        <Switch>
-        {/*  <Route exact path="/" component={Home}/>
-          <Route path="/contact" component={Contact}/>*/}
-        </Switch>
         <FSLogo/>
+        <Nav items={this.props.appData.data.navItems}/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/contact" component={Contact}/>
+        </Switch>
+
       </div>
     ) : null;
   }

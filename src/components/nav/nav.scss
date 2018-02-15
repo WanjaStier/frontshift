@@ -1,3 +1,11 @@
+@import '../../styles/variables';
+;
 .fs-nav {
+  &__list {
+    list-style: none;
+  }
 
+  &__list-item {
+    font-family: $font-bold;
+  }
 }

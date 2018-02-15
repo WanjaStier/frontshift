@@ -2,7 +2,7 @@
   "navItems": [
     {
       "key": "",
-      "label": "Home",
+      "label": "Homo",
       "section": "Home"
     },
     {
@@ -23,17 +23,100 @@
   ],
   "clients": [
     {
-      "name": "Client 1"
+      "name": "Client 1",
+      "logo": "",
+      "projects": [
+        {
+          "title": "Client 1, project 1",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Client 1, project 2",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Client 2"
+      "name": "Client 2",
+      "logo": "",
+      "projects": [
+        {
+          "title": "Client 2, project 1",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Client 2, project 2",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Client 3"
-    },
-    {
-      "name": "Client 4"
+      "name": "Client 3",
+      "logo": "",
+      "projects": [
+        {
+          "title": "Client 3, project 1",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Client 3, project 2",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
-

@@ -1,1 +1,10 @@
-@import 'vendor/_normalize.scss';
+@import 'variables';
+@import 'vendor/_normalize';
+@import 'fonts';
+@import 'base';
+
+// Components
+@import 'components/**/*.scss';
+
+// Containers
+@import 'containers/**/*.scss';
