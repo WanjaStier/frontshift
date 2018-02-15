@@ -9,6 +9,7 @@ import { createStore, applyMiddleware, compose  } from 'redux';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './reducers';
+import './styles/index.css';
 
 function doCreateStore() {
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
