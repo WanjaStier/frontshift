@@ -31,9 +31,10 @@ class App extends Component {
         <Route exact path="/" component={Home}/>
         <Route path="/services" component={Services}/>
         <Route path="/contact" component={Contact}/>
-        <Route exact path="/work" component={Work}/>
-        <Route path="/work/:client/:project" component={WorkDetailsContainer}/>
+
+        <Route exact path="/work/:client/:project" component={WorkDetailsContainer}/>
         <Route exact path="/work/:client" component={WorkDetailsContainer}/>
+        <Route exact path="/work" component={Work}/>
       </div>
     ) : null;
   }
