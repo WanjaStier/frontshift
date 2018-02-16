@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import appData from './app-data-reducer';
+import data from './app-data-reducer';
+import work from './work-reducer';
 
 export default combineReducers({
-  appData
+  data,
+  work
 });

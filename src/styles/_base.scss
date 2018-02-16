@@ -1,0 +1,9 @@
+@import 'variables';
+
+body {
+  background-color: $color-white;
+  color: $color-font;
+  font-family: $font-regular;
+  font-size: $font-size;
+  -webkit-font-smoothing: subpixel-antialiased;
+}

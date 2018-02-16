@@ -2,38 +2,117 @@
   "navItems": [
     {
       "key": "",
-      "label": "Home",
-      "section": "Home"
+      "title": "Homo"
     },
     {
       "key": "services",
-      "label": "Services",
-      "section": "Services"
+      "title": "Services"
     },
     {
       "key": "work",
-      "label": "Work",
-      "section": "Work"
+      "title": "Work"
     },
     {
       "key": "contact",
-      "label": "Contact",
-      "section": "Contact"
+      "title": "Contact"
     }
   ],
   "clients": [
     {
-      "name": "Client 1"
+      "title": "Client 1",
+      "logo": "",
+      "items": [
+        {
+          "title": "Client 1, project 1",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Client 1, project 2",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Client 2"
+      "title": "Client 2",
+      "logo": "",
+      "items": [
+        {
+          "title": "Client 2, project 1",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Client 2, project 2",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Client 3"
-    },
-    {
-      "name": "Client 4"
+      "title": "Client 3",
+      "logo": "",
+      "items": [
+        {
+          "title": "Client 3, project 1",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Client 3, project 2",
+          "description": "description",
+          "assets": [
+            {
+              "url": ""
+            },
+            {
+              "type": "video",
+              "url": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
-
