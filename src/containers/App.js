@@ -8,7 +8,7 @@ import Contact from '../components/Contact';
 import Background from '../components/background/Background';
 import Services from '../components/services/Services';
 import Work from '../components/work/Work';
-import WorkDetailsComponent from '../components/work/WorkDetailsComponent';
+import WorkDetailsContainer from '../containers/work-details/WorkDetailsContainer';
 
 import { getAppData } from '../actions/app-actions';
 import './app.css';
@@ -32,7 +32,8 @@ class App extends Component {
         <Route path="/services" component={Services}/>
         <Route path="/contact" component={Contact}/>
         <Route exact path="/work" component={Work}/>
-        <Route path="/work/:client/:project" component={WorkDetailsComponent}/>
+        <Route path="/work/:client/:project" component={WorkDetailsContainer}/>
+        <Route exact path="/work/:client" component={WorkDetailsContainer}/>
       </div>
     ) : null;
   }

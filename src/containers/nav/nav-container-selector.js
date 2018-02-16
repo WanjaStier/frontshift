@@ -6,11 +6,6 @@ function configureNav(items, work) {
   return items;
 }
 
-function getActiveKey(nav, location) {
-  const paths = location.pathname.split('/');
-  return paths[paths.length - 1];
-}
-
 export const navContainerSelector = createSelector(
   [
     state => state.app.data,
@@ -18,7 +13,8 @@ export const navContainerSelector = createSelector(
     state => state.router
   ],
   (data, work, router) => {
-    const nav = configureNav(data.navItems, work);
+    const nav = configureNav(data.navItems, work.clients);
+    console.log('update')
     return {
       items: nav,
       pathname: router.location.pathname //getActiveKey(nav, router.location)
