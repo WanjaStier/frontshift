@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Switch, Route } from 'react-router-dom';
-import FSLogo from '../components/logo/FSLogo';
-import Nav from '../components/nav/Nav';
+import { Switch, Route, withRouter  } from 'react-router-dom';
+import FSLogoComponent from '../components/logo/FSLogoComponent';
+import NavContainer from '../containers/nav/NavContainer';
 import Home from '../components/Home';
 import Contact from '../components/Contact';
 import Background from '../components/background/Background';
 import Services from '../components/services/Services';
 import Work from '../components/work/Work';
-import WorkDetails from '../components/work/WorkDetails';
+import WorkDetailsComponent from '../components/work/WorkDetailsComponent';
 
 import { getAppData } from '../actions/app-actions';
 import './app.css';
@@ -22,20 +22,17 @@ class App extends Component {
     return this.props.app.data ? (
       <div className="fs-app">
         <Background/>
-        <FSLogo/>
+        <FSLogoComponent />
         <Route render={route => {
           return (
-            <Nav {...route} items={this.props.app.data.navItems}/>
+            <NavContainer {...route} {...this.props.router} items={this.props.app.data.navItems}/>
           );
         }}/>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/services" component={Services}/>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/work" component={Work}/>
-          <Route path="/work/:client/:project" component={WorkDetails}/>
-        </Switch>
-
+        <Route exact path="/" component={Home}/>
+        <Route path="/services" component={Services}/>
+        <Route path="/contact" component={Contact}/>
+        <Route exact path="/work" component={Work}/>
+        <Route path="/work/:client/:project" component={WorkDetailsComponent}/>
       </div>
     ) : null;
   }

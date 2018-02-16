@@ -2,30 +2,26 @@
   "navItems": [
     {
       "key": "",
-      "label": "Homo",
-      "section": "Home"
+      "title": "Homo"
     },
     {
       "key": "services",
-      "label": "Services",
-      "section": "Services"
+      "title": "Services"
     },
     {
       "key": "work",
-      "label": "Work",
-      "section": "Work"
+      "title": "Work"
     },
     {
       "key": "contact",
-      "label": "Contact",
-      "section": "Contact"
+      "title": "Contact"
     }
   ],
   "clients": [
     {
-      "name": "Client 1",
+      "title": "Client 1",
       "logo": "",
-      "projects": [
+      "items": [
         {
           "title": "Client 1, project 1",
           "description": "description",
@@ -55,9 +51,9 @@
       ]
     },
     {
-      "name": "Client 2",
+      "title": "Client 2",
       "logo": "",
-      "projects": [
+      "items": [
         {
           "title": "Client 2, project 1",
           "description": "description",
@@ -87,9 +83,9 @@
       ]
     },
     {
-      "name": "Client 3",
+      "title": "Client 3",
       "logo": "",
-      "projects": [
+      "items": [
         {
           "title": "Client 3, project 1",
           "description": "description",

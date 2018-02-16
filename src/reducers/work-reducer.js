@@ -12,8 +12,8 @@ export default createReducer(initialState, {
     return payload.clients.map(client => {
       return {
         ...client,
-        key: getKeyForLabel(client.name),
-        projects: client.projects.map(project => {
+        key: getKeyForLabel(client.title),
+        items: client.items.map(project => {
           return {
             ...project,
             key: getKeyForLabel(project.title)
@@ -22,4 +22,4 @@ export default createReducer(initialState, {
       }
     });
   }
-})
+});
