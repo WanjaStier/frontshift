@@ -1,11 +1,47 @@
-@import '../../styles/variables';
-;
+@import 'styles/variables';
+@import 'styles/mixins';
 .fs-nav {
+
+  padding: 20px 0;
+
   &__list {
     list-style: none;
+    padding: 0;
   }
 
-  &__list-item {
+  &__link {
     font-family: $font-bold;
+    @include font-size(20px);
+    display: block;
+    text-decoration: none;
+    color: $color-black;
+    transition: all ease-out 200ms;
+    margin-bottom: 5px;
+
+
+    &:after {
+      transition: all ease-out 200ms;
+      position: absolute;
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: black;
+      left: 0;
+    }
+
+    &--active {
+      &:after {
+        width: 20px;
+      }
+    }
+
+
+    &--active,
+    &:hover {
+      color: lighten($color-black, 50%);
+    }
   }
 }
+
+

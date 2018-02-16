@@ -1,23 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {  Route } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory'
+import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux'
 import thunk from 'redux-thunk';
 import App from './containers/App';
 import { AppContainer } from 'react-hot-loader'
-import { createStore, applyMiddleware, compose  } from 'redux';
+import { createStore, applyMiddleware, combineReducers, compose  } from 'redux';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './reducers';
 import './styles/index.css';
 
+const history = createHistory();
+
 function configureStore() {
+  const _routerMiddleware = routerMiddleware(history);
+  console.log(...routerReducer)
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   const enhancer = composeEnhancers(
-    applyMiddleware(thunk)
+    applyMiddleware(thunk, _routerMiddleware),
+
   );
 
-  const store =  createStore(
-    rootReducer,
+
+
+  const store =  createStore(combineReducers({
+      app: rootReducer,
+      router: routerReducer
+    }),
     enhancer
   );
 
@@ -25,7 +36,10 @@ function configureStore() {
     // Enable Webpack hot module replacement for reducers
     module.hot.accept('./reducers', () => {
       const nextRootReducer = require('./reducers').default;
-      store.replaceReducer(nextRootReducer);
+      store.replaceReducer(combineReducers({
+          ...nextRootReducer,
+        router: routerReducer
+      }));
     });
   }
 
@@ -40,9 +54,9 @@ function render(Component)  {
   ReactDOM.render(
     <AppContainer>
       <Provider store={store}>
-        <Router>
+        <ConnectedRouter history={history}>
           <Route component={Component} />
-        </Router>
+        </ConnectedRouter>
       </Provider>
     </AppContainer>,
     document.getElementById('root'),
