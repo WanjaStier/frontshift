@@ -1,12 +1,12 @@
 import { createSelector } from 'reselect';
 
 function configureNav(items, work) {
-  items.find(item => item.key === 'work').items = work;
+ // items.find(item => item.key === 'work').items = work;
   console.log(items)
   return items;
 }
 
-export const navContainerSelector = createSelector(
+export const headerContainerSelector = createSelector(
   [
     state => state.app.data,
     state => state.app.work,

@@ -1,12 +1,8 @@
 {
   "navItems": [
     {
-      "key": "",
-      "title": "Homo"
-    },
-    {
-      "key": "services",
-      "title": "Services"
+      "key": "about",
+      "title": "About"
     },
     {
       "key": "work",

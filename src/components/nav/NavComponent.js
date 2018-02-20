@@ -13,7 +13,7 @@ export default class NavComponent extends Component {
             const path = `${this.props.path || ''}/${item.key}`;
             const canRenderSubNav = item.items && pathname && pathname.includes(path);
             return (
-              <li key={item.key}>
+              <li className="fs-nav__list-item" key={item.key}>
                 <NavLink exact
                          to={path}
                          className='fs-nav__link'

@@ -1,9 +1,19 @@
 @import 'variables';
 
 body {
-  background-color: $color-white;
+  background-color: $color-grey;
   color: $color-font;
   font-family: $font-regular;
   font-size: $font-size;
   -webkit-font-smoothing: subpixel-antialiased;
+  min-width: $min-width;
+}
+
+
+
+/*
+ Vendor overrides
+ */
+[class^="col-"] {
+  padding: 6px !important;
 }
