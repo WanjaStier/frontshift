@@ -33,7 +33,10 @@ function addKeys(state, payload) {
 
 function addProjects(state) {
   const projects = state.clients
-    .reduce((acc, client) => acc.concat(client.items), []);
+    .reduce((acc, client) => {
+      const items = client.items.map(item => ({...item, client: client.title}));
+      return acc.concat(items)
+    }, []);
 
   return {
     ...state,

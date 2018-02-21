@@ -10,6 +10,7 @@ import Services from '../components/services/Services';
 import Work from '../components/work/Work';
 import HeaderContainer from '../containers/header/HeaderContainer'
 import WorkDetailsContainer from '../containers/work-details/WorkDetailsContainer';
+import WorkOverviewContainer from '../containers/work-overview/WorkOverviewContainer';
 
 import { getAppData } from '../actions/app-actions';
 import './app.css';
@@ -33,9 +34,9 @@ class App extends Component {
           <Route path="/services" component={Services}/>
           <Route path="/contact" component={Contact}/>
 
-          <Route exact path="/work/:client/:project" component={WorkDetailsContainer}/>
-          <Route exact path="/work/:client" component={WorkDetailsContainer}/>
-          <Route exact path="/work" component={Work}/>
+   {/*       <Route exact path="/work/:client/:project" component={WorkDetailsContainer}/>
+          <Route exact path="/work/:client" component={WorkDetailsContainer}/>*/}
+          <Route exact path="/work" component={WorkOverviewContainer}/>
         </div>
       </div>
 
