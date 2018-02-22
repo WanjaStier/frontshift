@@ -1,5 +1,5 @@
 import React from 'react';
-import FSLogoComponent from '../logo/FSLogoComponent'
+import FSLogoComponent from '../logo/FSLogo'
 import './header.css';
 
 export default function HeaderComponent({items}) {

@@ -1,10 +1,17 @@
 @import 'styles/variables';
-.fs-app {
+@import 'styles/mixins';
 
+.fs-app {
   &__content {
     max-width: 1400px;
     display: block;
     margin: 0 auto;
     padding: 0 40px;
+  }
+
+  &__pages {
+    @include breakpoint(sm) {
+      margin-top: 100px;
+    }
   }
 }

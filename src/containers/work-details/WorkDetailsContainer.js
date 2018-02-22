@@ -1,20 +1,32 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter  } from 'react-router-dom';
-import WorkDetailsComponent from '../../components/work/WorkDetailsComponent';
-import { workDetailsSelector } from './work-details-selector';
+import AssetGrid from '../../components/asset-grid/AssetGrid';
+import ProjectInfo from '../../components/project-info/ProjectInfo';
+import { makeGetCurrentProjectSelector } from './work-details-selector';
 
 
 class WorkDetailsContainer extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
-    return this.props.project ? (
+    return  (
       <div>
-        <WorkDetailsComponent project={this.props.project} />
+        <ProjectInfo project={this.props.currentProject} />
+        <AssetGrid project={this.props.currentProject} />
       </div>
-    ) : <h1>select a project</h1>
+    )
   }
 }
 
-export default  connect(workDetailsSelector, {
-  action: () => { console.log('this is an action')}
-})(WorkDetailsContainer);
+function makeMapStateToProps() {
+  const getCurrentProject = makeGetCurrentProjectSelector();
+  return (state, props) => {
+    return {
+      currentProject: getCurrentProject(state.app.work.projects, props)
+    }
+  }
+}
+
+
+export default  connect(makeMapStateToProps)(WorkDetailsContainer);

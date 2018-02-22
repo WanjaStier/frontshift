@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import NavComponent from '../../components/nav/NavComponent';
-import FSLogoComponent from '../../components/logo/FSLogoComponent';
+import FSLogoComponent from '../../components/logo/FSLogo';
 import { headerContainerSelector } from './header-container-selector';
+import IconLink from '../../components/icon-link/IconLink'
 import './header-container.css';
-
+import emailIcon from '../../images/e-mail-envelope.svg';
 class HeaderContainer extends Component {
   render() {
-    console.log(this.props.activeItem)
     return (
       <div className="fs-header">
         <div className="fs-header__content fs-app__content">
@@ -17,9 +17,16 @@ class HeaderContainer extends Component {
                 <FSLogoComponent/>
               </div>
               <div className="col-xs-12 col-sm-6 col-grid">
-                <NavComponent
-                  pathname={this.props.pathname}
-                  items={this.props.items} />
+                <div>
+                  <NavComponent
+                    pathname={this.props.pathname}
+                    items={this.props.items} />
+                  <IconLink className="email-link"
+                            linkUrl="mailto:hello@frontshift.com?subject=+++hello frontshift+++"
+                            target="_self"
+                            iconSrc={emailIcon} />
+                </div>
+
               </div>
             </div>
 
@@ -32,5 +39,5 @@ class HeaderContainer extends Component {
 }
 
 export default  connect(headerContainerSelector, {
-  action: () => { console.log('this is an action')}
+  action: () => {}
 })(HeaderContainer);

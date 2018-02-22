@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 body {
   background-color: $color-grey;
@@ -7,13 +8,27 @@ body {
   font-size: $font-size;
   -webkit-font-smoothing: subpixel-antialiased;
   min-width: $min-width;
+  @include font-size(15px);
 }
 
+p,
+span {
+  line-height: 1.5rem;
+}
+
+a,
+a:visited {
+  color: $color-grey-dark;
+}
+
+a:hover {
+  color: darken($color-grey-dark, 40%);
+}
 
 
 /*
  Vendor overrides
  */
 [class^="col-"] {
-  padding: 6px !important;
+  padding: $grid-gutter !important;
 }

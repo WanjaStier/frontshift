@@ -16,14 +16,11 @@ const history = createHistory();
 
 function configureStore() {
   const _routerMiddleware = routerMiddleware(history);
-  console.log(...routerReducer)
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   const enhancer = composeEnhancers(
     applyMiddleware(thunk, _routerMiddleware),
 
   );
-
-
 
   const store =  createStore(combineReducers({
       app: rootReducer,
@@ -37,7 +34,7 @@ function configureStore() {
     module.hot.accept('./reducers', () => {
       const nextRootReducer = require('./reducers').default;
       store.replaceReducer(combineReducers({
-          ...nextRootReducer,
+        app: nextRootReducer,
         router: routerReducer
       }));
     });

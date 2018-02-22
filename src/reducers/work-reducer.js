@@ -1,5 +1,5 @@
 import { createReducer } from '../utils/reducers';
-import { actionTypes } from '../actions/app-action-types';
+import { actionTypes } from '../actions/action-types';
 import { compose } from 'redux';
 
 const initialState = {
@@ -7,19 +7,19 @@ const initialState = {
   projects: []
 };
 
-function getKeyForLabel(label) {
+function getIdForLabel(label) {
   return label.toLowerCase().replace(/\s/g, '-');
 }
 
-function addKeys(state, payload) {
+function addIds(state, payload) {
   const clients = payload.clients.map(client => {
     return {
       ...client,
-      key: getKeyForLabel(client.title),
+      id: getIdForLabel(client.title),
       items: client.items.map(project => {
         return {
           ...project,
-          key: getKeyForLabel(project.title)
+          id: getIdForLabel(project.title)
         }
       })
     }
@@ -34,7 +34,7 @@ function addKeys(state, payload) {
 function addProjects(state) {
   const projects = state.clients
     .reduce((acc, client) => {
-      const items = client.items.map(item => ({...item, client: client.title}));
+      const items = client.items.map(item => ({...item, client: client.title, clientId: client.id}));
       return acc.concat(items)
     }, []);
 
@@ -47,6 +47,6 @@ function addProjects(state) {
 export default createReducer(initialState, {
   [actionTypes.GET_APP_DATA]: compose(
     addProjects,
-    addKeys
+    addIds
   )
 });

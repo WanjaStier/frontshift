@@ -1,0 +1,85 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+.fs-project-tile {
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+
+  &__overlay,
+  &__copy-container {
+    transition: all 300ms cubic-bezier(.03,.62,.48,1.17);
+    @include breakpoint(sm) {
+      opacity: 0;
+    }
+  }
+
+
+    &:hover & {
+      @include breakpoint(sm) {
+        &__overlay {
+          opacity: 1;
+        }
+
+        &__copy-container {
+          transform: translateY(-25%);
+          opacity: 1;
+        }
+
+        &__image {
+          transform: scale(1.05);
+        }
+      }
+
+    }
+
+
+  &__inner {
+    position: relative;
+    @include aspect-ratio(16,9);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: width .5s, transform 1s;
+  }
+
+
+  &__overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__copy-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+
+    @include breakpoint(sm) {
+      transform: translateY(-10%);
+    }
+
+  }
+
+  &__title {
+    color: $color-white;
+    font-family: $font-bold;
+    margin: 0;
+    font-size: 6vw;
+   @include breakpoint(sm) {
+     font-size: 3vw;
+   }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-style: italic;
+    color: $color-white;
+    font-size: 3vw;
+    @include breakpoint(sm) {
+      font-size: 1.5vw;
+    }
+  }
+}

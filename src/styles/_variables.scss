@@ -2,7 +2,7 @@
 /*
   Fonts
 */
-$font-size: 1.6rem !default;
+$font-size: 15px !default;
 $font-bold: 'Archivo', sans-serif;
 $font-regular: 'Open Sans', sans-serif;
 
@@ -11,6 +11,7 @@ $font-regular: 'Open Sans', sans-serif;
 */
 $color-white: #fff;
 $color-grey: #f8f8f8;
+$color-grey-dark: darken($color-grey, 50%);
 $color-black: #000;
 $color-font: $color-black;
 
@@ -18,9 +19,15 @@ $color-font: $color-black;
 /*
    dimensions
 */
-$min-width: 320px;
+$min-width: 303px;
 $max-width: 1400px;
 $breakpoint-xs: 767px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
 $breakpoint-lg: 1200px;
+
+/*
+  Spacing
+*/
+
+$grid-gutter: 6px;

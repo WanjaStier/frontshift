@@ -15,97 +15,252 @@
   ],
   "clients": [
     {
-      "title": "Client 1",
-      "logo": "",
+      "title": "Nike",
       "items": [
         {
-          "title": "Client 1, project 1",
-          "description": "description",
+          "title": "The Chance",
+          "previewImageUrl": "/img/project_tiles/the_chance.jpg",
+          "description": [
+            "As part of Nike’s \"The Chance\" campaign, we developed a frontend application which allowed users to to upload a photo of themselves via social media or webcam, modify the look by selecting a face type and hair and create digital version of the next hero in football. The application would generate several posters and a video with a narrative, featuring the user’s avatar as the next football superstar.",
+            "The Chance attracted 150,000 young competitors from 55 countries across the globe, all vying to get the attention of Nike Football’s elite scouts on social media. We picked 100 potential stars and trained them hard. The Chance generated unprecedented levels of interest and engagement; 1.5 million Facebook app installs, 3.8 million likes and comments on social, 10 million YouTube views and 17 million social interactions. The competition earned the brand huge kudos and cemented Nike Football as the number one brand among teenage footballers."
+          ],
+          "year": 2010,
+          "type": "Campaign website",
+          "company": "Wieden + Kennedy / AKQA / Stink Studios",
+
           "assets": [
             {
-              "url": ""
+              "url": "/img/portfolio/the_chance/chance_header.jpg",
+              "classNames": "col-xs-12 col-sm-12"
             },
             {
+              "url": "https://vimeo.com/33627759",
               "type": "video",
-              "url": ""
-            }
-          ]
-        },
-        {
-          "title": "Client 1, project 2",
-          "description": "description",
-          "assets": [
-            {
-              "url": ""
+              "classNames": "col-xs-12 col-sm-12"
             },
             {
-              "type": "video",
-              "url": ""
+              "url": "/img/portfolio/the_chance/avatar_app.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/the_chance/poster.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/the_chance/get_noticed.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/the_chance/avatar_app_2.jpg",
+              "classNames": "col-xs-12 col-sm-12"
             }
           ]
         }
       ]
     },
     {
-      "title": "Client 2",
+      "title": "Heineken",
       "logo": "",
       "items": [
         {
-          "title": "Client 2, project 1",
-          "description": "description",
+          "title": "Star Player",
+          "previewImageUrl": "/img/project_tiles/star_player.jpg",
+          "description": [
+            "Prove your football instincts by responding live to critical match moments. Anticipate and react in real time as the game plays out, just like the teams on the pitch. Stay one step ahead of the action as you create a stake in every shot, corner, free kick or penalty, dialing up the tension and getting right inside the game. So no matter who is playing, you have a reason to celebrate.",
+            "Star Player is a world first. Exploiting the opportunities of Dual Screening and connecting viewers with their social network. Either via the Star Player iPhone app, or the Facebook platform. Allowing them to create leagues to compete with their friends and the world."
+          ],
+          "year": "2010/2011",
+          "type": "Dual screen app",
+          "company": "AKQA",
+
           "assets": [
             {
-              "url": ""
+              "url": "/img/portfolio/star_player/star_player.jpg",
+              "classNames": "col-xs-12 col-sm-12"
             },
             {
               "type": "video",
-              "url": ""
-            }
-          ]
-        },
-        {
-          "title": "Client 2, project 2",
-          "description": "description",
-          "assets": [
-            {
-              "url": ""
+              "url": "https://vimeo.com/256429851",
+              "classNames": "col-xs-12 col-sm-12"
             },
             {
-              "type": "video",
-              "url": ""
+              "url": "/img/portfolio/star_player/star_player_1.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_2.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_3.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_4.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_5.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_6.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_7.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_8.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_9.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/star_player/star_player_10.jpg",
+              "classNames": "col-xs-12 col-sm-6"
             }
           ]
         }
       ]
     },
     {
-      "title": "Client 3",
+      "title": "McLaren",
       "logo": "",
       "items": [
         {
-          "title": "Client 3, project 1",
-          "description": "description",
+          "title": "MP4-12C and P1 Spider Configurator",
+          "previewImageUrl": "/img/project_tiles/mclaren_configurator.jpg",
+          "description": [
+            "In 2010 we developed a car configurator for McLaren’s MP4-12C super car, followed by the legendary P1 in 2012. The website featured a non linear configuration journey and included a complex compatibility calculation algorithm as well as an advanced real time colour and material renderer. See below for a video of Jenson Button and Lewis Hamilton configuring a McLaren of their dreams.",
+            "The application was launched world wide and has also been used as a tool for retailers to create custom configurations for their customers. This made it possible for retailers to sell / upsell custom options, providing immediate visual feedback for customers and directly send the configuration to the McLaren factory per click of a button"
+          ],
+          "year": "2010/2012",
+          "type": "Website / Retailer App",
+          "company": "AKQA",
           "assets": [
             {
-              "url": ""
+              "type": "video",
+              "url": "https://vimeo.com/256428294",
+              "classNames": "col-xs-12 col-sm-12"
             },
             {
               "type": "video",
-              "url": ""
-            }
-          ]
-        },
-        {
-          "title": "Client 3, project 2",
-          "description": "description",
-          "assets": [
-            {
-              "url": ""
+              "url": "https://vimeo.com/256428366",
+              "classNames": "col-xs-12 col-sm-12"
             },
             {
-              "type": "video",
-              "url": ""
+              "url": "/img/portfolio/mclaren/configurator/9.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/10.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/11.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/12.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/13.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/14.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/15.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/16.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/17.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/18.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/19.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/20.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/21.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/22.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/23.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/24.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/25.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/26.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/27.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/28.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/29.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/30.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/31.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/32.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/33.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/35.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/37.jpg",
+              "classNames": "col-xs-12 col-sm-6"
             }
+
           ]
         }
       ]

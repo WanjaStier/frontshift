@@ -1,5 +1,5 @@
 import { createReducer } from '../utils/reducers';
-import { actionTypes } from '../actions/app-action-types';
+import { actionTypes } from '../actions/action-types';
 
 const initialState = null;
 

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
-import FSLogoComponent from '../components/logo/FSLogoComponent';
+import FSLogo from '../components/logo/FSLogo';
 import NavContainer from './header/HeaderContainer';
 import Home from '../components/Home';
+import Footer from '../components/footer/Footer';
 import Contact from '../components/Contact';
 import Background from '../components/background/Background';
 import Services from '../components/services/Services';
@@ -24,7 +25,7 @@ class App extends Component {
     return this.props.app.data ? (
       <div className="fs-app">
         <HeaderContainer items={this.props.app.data.navItems}/>
-        <div className="fs-app__content">
+        <div className="fs-app__content fs-app__pages">
           {/*<Route render={route => {
             return (
               <HeaderCo {...route} {...this.props.router} items={this.props.app.data.navItems}/>
@@ -34,14 +35,21 @@ class App extends Component {
           <Route path="/services" component={Services}/>
           <Route path="/contact" component={Contact}/>
 
-   {/*       <Route exact path="/work/:client/:project" component={WorkDetailsContainer}/>
-          <Route exact path="/work/:client" component={WorkDetailsContainer}/>*/}
+        <Route exact path="/work/:client/:project" component={WorkDetailsContainer}/>
+          {/*      <Route exact path="/work/:client" component={WorkDetailsContainer}/>*/}
           <Route exact path="/work" component={WorkOverviewContainer}/>
+          <Footer/>
         </div>
+
       </div>
 
     ) : null;
   }
 }
 
-export default connect(state => state, {getAppData})(App);
+function mapStateToProps(state) {
+  return state;
+}
+
+
+export default connect(mapStateToProps, {getAppData})(App);

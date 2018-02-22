@@ -1,0 +1,28 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+.fs-project-info {
+  $text-margin: 15px;
+
+  &__title {
+    @include font-size(18px);
+  }
+
+  &__title {
+    font-family: $font-bold;
+
+    margin: $text-margin 0;
+  }
+
+  &__metadata {
+    @include breakpoint(sm) {
+      position: absolute;
+      bottom: $text-margin + $grid-gutter;
+    }
+
+  }
+
+  &__meta-value {
+    color: $color-grey-dark;
+  }
+}
