@@ -1,5 +1,45 @@
+@import './variables';
 
 @mixin font-size($size) {
   $remSize: $size / 16px;
   font-size: $remSize * 1rem;
+}
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: $breakpoint-xs) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: $breakpoint-sm) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: $breakpoint-md) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }

@@ -1,0 +1,51 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins';
+
+.fs-header {
+  $top-margin: 8px;
+  background: rgba(255, 255, 255, .98);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  @include breakpoint(sm) {
+    height: 100px;
+    position: fixed;
+    top: 0;
+  }
+
+  &__content-inner {
+    padding: 20px;
+    @include breakpoint(sm) {
+      padding: 50px 0 0 0;
+    }
+  }
+
+  .fs-nav {
+    margin-top: $top-margin - 2;
+  }
+
+  .fs-logo {
+    display: block;
+    margin: 0 auto;
+
+    @include breakpoint(sm) {
+      margin: 0;
+    }
+  }
+
+  .email-link {
+    display: none;
+    position: absolute;
+    right: $grid-gutter;
+    top: $top-margin + 2;
+    width: 20px;
+    img {
+      background: white;
+    }
+
+    @include breakpoint(sm) {
+      display: inherit;
+    }
+  }
+}

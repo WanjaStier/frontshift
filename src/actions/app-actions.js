@@ -1,5 +1,5 @@
 import { createAction } from '../utils/actions';
-import { actionTypes } from './app-action-types';
+import { actionTypes } from './action-types';
 
 
 export function getAppData() {
@@ -8,4 +8,8 @@ export function getAppData() {
     const json = await data.json();
     dispatch(createAction(actionTypes.GET_APP_DATA, json))
   }
+}
+
+export function setCurrentProject(id) {
+
 }

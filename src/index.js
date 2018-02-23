@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {  Route } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory'
-import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux'
+import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk';
 import App from './containers/App';
 import { AppContainer } from 'react-hot-loader'
@@ -16,14 +16,11 @@ const history = createHistory();
 
 function configureStore() {
   const _routerMiddleware = routerMiddleware(history);
-  console.log(...routerReducer)
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   const enhancer = composeEnhancers(
     applyMiddleware(thunk, _routerMiddleware),
 
   );
-
-
 
   const store =  createStore(combineReducers({
       app: rootReducer,
@@ -37,7 +34,7 @@ function configureStore() {
     module.hot.accept('./reducers', () => {
       const nextRootReducer = require('./reducers').default;
       store.replaceReducer(combineReducers({
-          ...nextRootReducer,
+        app: nextRootReducer,
         router: routerReducer
       }));
     });

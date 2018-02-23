@@ -1,9 +1,25 @@
 @import 'variables';
+@import 'mixins';
 
 body {
-  background-color: $color-white;
+  background-color: $color-grey;
   color: $color-font;
   font-family: $font-regular;
   font-size: $font-size;
   -webkit-font-smoothing: subpixel-antialiased;
+  min-width: $min-width;
+  @include font-size(15px);
+}
+
+p,
+span {
+  line-height: 1.5rem;
+}
+
+
+/*
+ Vendor overrides
+ */
+[class^="col-"] {
+  padding: $grid-gutter !important;
 }

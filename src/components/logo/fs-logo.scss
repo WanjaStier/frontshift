@@ -1,4 +1,15 @@
+@import 'styles/mixins';
 .fs-logo {
-  max-width: 150px;
   user-select: none;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include breakpoint(sm) {
+    max-width: 150px;
+  }
+
 }
