@@ -7,8 +7,10 @@ export default function Footer() {
       <div className="fs-footer__inner grid">
         <hr className="col-xs-12 col-sm-12 col-grid"/>
         <div className="col-xs-12 col-sm-4 col-grid">
-          frontshift studios<br />
-          web development and consultancy
+          <span>
+            frontshift.<br />
+            development & consultancy
+          </span>
         </div>
         <div className="col-xs-12 col-sm-4 col-grid">
           <span className="fs-footer__email">
@@ -16,8 +18,10 @@ export default function Footer() {
           </span>
         </div>
         <div className="col-xs-12 col-sm-4 col-grid fs-footer__copyright">
-          © frontshift Ltd<br/>
-          Registered in England & Wales, 8899415
+          <span>
+            © frontshift ltd<br/>
+            registered in England & Wales, 09994478
+          </span>
         </div>
       </div>
 

@@ -11,7 +11,6 @@ class WorkOverviewContainer extends Component {
   }
 
   getProjectLink(project) {
-    console.log(project)
     return `${this.props.match.path}/${project.clientId}/${project.id}`
   }
 

@@ -22,7 +22,7 @@
   }
 
   .fs-nav {
-    margin-top: $top-margin;
+    margin-top: $top-margin - 2;
   }
 
   .fs-logo {
@@ -38,7 +38,7 @@
     display: none;
     position: absolute;
     right: $grid-gutter;
-    top: $top-margin;
+    top: $top-margin + 2;
     width: 20px;
     img {
       background: white;

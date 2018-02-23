@@ -6,7 +6,7 @@ function getMarkupForAsset(asset) {
   return asset.type === 'video' ? (
     <VideoPlayer videoUrl={asset.url}/>
   ) : (
-    <img src={`${process.env.PUBLIC_URL}${asset.url}`}/>
+    <img src={`${process.env.PUBLIC_URL}${asset.url}`} alt="" />
   )
 }
 

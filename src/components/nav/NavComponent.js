@@ -4,6 +4,12 @@ import {NavLink} from 'react-router-dom';
 import './nav.css';
 
 export default class NavComponent extends Component {
+  isActiveLink(path, match, location) {
+    return location.pathname.includes(path)
+    // isActive={this.isActiveLink.bind(this, path)}
+  }
+
+
   render() {
     const { items, pathname } = this.props;
     return (

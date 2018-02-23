@@ -1,12 +1,8 @@
 @import 'styles/variables';
 @import 'styles/mixins';
 .fs-nav {
-
-
   &__list-item {
     text-align: center;
-
-
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -26,10 +22,11 @@
     width: 100%;
     padding: 30px 0;
     margin: 0;
-    @include font-size(16px);
+    @include font-size(20px);
 
     @include breakpoint(sm) {
       padding: 0;
+      @include font-size(16px);
     }
    /* li > ul {
       @include font-size(16px);
@@ -50,9 +47,6 @@
     }*/
     list-style: none;
     list-style-position: outside;
-
-
-
   }
 
   &__link {
@@ -77,6 +71,7 @@
     }*/
 
     &--active {
+
       pointer-events: none;
       &:after {
         width: 5px
@@ -86,7 +81,7 @@
 
     &--active,
     &:hover {
-      color: lighten($color-black, 50%);
+      color: lighten($color-black, 60%);
     }
   }
 }

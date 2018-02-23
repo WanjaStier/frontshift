@@ -132,7 +132,7 @@
       "logo": "",
       "items": [
         {
-          "title": "MP4-12C and P1 Spider Configurator",
+          "title": "MP4-12C and P1 Configurator",
           "previewImageUrl": "/img/project_tiles/mclaren_configurator.jpg",
           "description": [
             "In 2010 we developed a car configurator for McLaren’s MP4-12C super car, followed by the legendary P1 in 2012. The website featured a non linear configuration journey and included a complex compatibility calculation algorithm as well as an advanced real time colour and material renderer. See below for a video of Jenson Button and Lewis Hamilton configuring a McLaren of their dreams.",
@@ -154,10 +154,6 @@
             },
             {
               "url": "/img/portfolio/mclaren/configurator/9.jpg",
-              "classNames": "col-xs-12 col-sm-6"
-            },
-            {
-              "url": "/img/portfolio/mclaren/configurator/10.jpg",
               "classNames": "col-xs-12 col-sm-6"
             },
             {
@@ -259,8 +255,354 @@
             {
               "url": "/img/portfolio/mclaren/configurator/37.jpg",
               "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/configurator/mclaren_pdf.jpg",
+              "classNames": "col-xs-12 col-sm-12"
             }
+          ]
+        },
+        {
+          "title": "MP4-12C",
+          "previewImageUrl": "/img/project_tiles/mclaren_mp412c_explore.jpg",
+          "description": [
+            "N/A"
+           ],
+          "year": "2009",
+          "type": "Website",
+          "company": "AKQA",
+          "assets": [
+            {
+              "url": "/img/portfolio/mclaren/explore/header.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/1.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/2.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/3.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/4.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/5.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/6.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/7.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/8.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/mclaren/explore/9.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mondelez",
+      "logo": "",
+      "items": [
+        {
+          "title": "Oreo Lick For It",
+          "previewImageUrl": "/img/project_tiles/lick_for_it.jpg",
+          "description": [
+            "N/A"
+          ],
+          "year": "2013",
+          "type": "Campaign website",
+          "company": "AKQA",
 
+          "assets": [
+            {
+              "url": "/img/portfolio/oreo/2.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/oreo/1.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/oreo/3.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/oreo/4.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/oreo/5.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/oreo/6.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/oreo/7.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/oreo/8.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/oreo/9.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fiat",
+      "logo": "",
+      "items": [
+        {
+          "title": "ecoDrive",
+          "previewImageUrl": "/img/project_tiles/eco_drive_gp.jpg",
+          "description": [
+            "eco:Drive is the very latest in digital integrated technology. It is an easy-to-use computer application that connects your car to your PC. Using cutting-edge analytic software, eco:Drive dissects and evaluates your driving style and shows you ways to cut down on fuel consumption, reducing your CO2 emissions and saving you money. How it works:",
+            "Your driving data (in-car diagnostic information) is transferred from your Fiat to your computer, by means of a USB stick and Fiat's Blue&MeTM technology. The eco:Drive application on your computer analyses your acceleration, deceleration, gear changes and speed. It then awards you a mark out of 100, according to how efficiently you have driven. Step-by-step tutorials then help you improve your score, giving you practical advice on how to perfect your driving style, using information from your own journeys."
+          ],
+          "year": "2008/2012",
+          "type": "Desktop app",
+          "company": "AKQA",
+          "assets": [
+            {
+              "type": "video",
+              "url": "https://vimeo.com/256429014",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/fiat/ecodrive/1.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/fiat/ecodrive/4.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/ecodrive/5.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/ecodrive/2.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/fiat/ecodrive/3.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            }
+          ]
+        },
+        {
+          "title": "Fiat Configurator",
+          "previewImageUrl": "/img/project_tiles/fiat_configurator.jpg",
+          "description": [
+            "eco:Drive is the very latest in digital integrated technology. It is an easy-to-use computer application that connects your car to your PC. Using cutting-edge analytic software, eco:Drive dissects and evaluates your driving style and shows you ways to cut down on fuel consumption, reducing your CO2 emissions and saving you money. How it works:",
+            "Your driving data (in-car diagnostic information) is transferred from your Fiat to your computer, by means of a USB stick and Fiat's Blue&MeTM technology. The eco:Drive application on your computer analyses your acceleration, deceleration, gear changes and speed. It then awards you a mark out of 100, according to how efficiently you have driven. Step-by-step tutorials then help you improve your score, giving you practical advice on how to perfect your driving style, using information from your own journeys."
+          ],
+          "year": "2009-2012",
+          "type": "Website",
+          "company": "AKQA",
+          "assets": [
+            {
+              "url": "/img/portfolio/fiat/configurator/1.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/configurator/2.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/configurator/3.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/configurator/4.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/configurator/5.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/configurator/6.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            }
+          ]
+        },
+        {
+          "title": "fiat.co.uk",
+          "previewImageUrl": "/img/project_tiles/fiat_homepage.jpg",
+          "description": [
+            "eco:Drive is the very latest in digital integrated technology. It is an easy-to-use computer application that connects your car to your PC. Using cutting-edge analytic software, eco:Drive dissects and evaluates your driving style and shows you ways to cut down on fuel consumption, reducing your CO2 emissions and saving you money. How it works:",
+            "Your driving data (in-car diagnostic information) is transferred from your Fiat to your computer, by means of a USB stick and Fiat's Blue&MeTM technology. The eco:Drive application on your computer analyses your acceleration, deceleration, gear changes and speed. It then awards you a mark out of 100, according to how efficiently you have driven. Step-by-step tutorials then help you improve your score, giving you practical advice on how to perfect your driving style, using information from your own journeys."
+          ],
+          "year": "2009-2012",
+          "type": "Website",
+          "company": "AKQA",
+          "assets": [
+            {
+              "type": "video",
+              "url": "https://vimeo.com/256428828",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/fiat/homepage/1.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/homepage/2.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/homepage/3.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/homepage/4.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/homepage/5.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/homepage/6.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/fiat/homepage/7.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            }, {
+              "url": "/img/portfolio/fiat/homepage/8.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Barclays",
+      "logo": "",
+      "items": [
+        {
+          "title": "High Growth & Entrepreneurs",
+          "previewImageUrl": "/img/project_tiles/barclays_hge.jpg",
+          "description": [
+            "N/A"
+          ],
+          "year": "2016",
+          "type": "Website",
+          "company": "AKQA",
+
+          "assets": [
+            {
+              "url": "/img/portfolio/barclays/1.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/barclays/2.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/barclays/3.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ferrari",
+      "logo": "",
+      "items": [
+        {
+          "title": "Muretto",
+          "previewImageUrl": "/img/project_tiles/ferrari_muretto.jpg",
+          "description": [
+            "The Muretto (Italian for \"pit wall\") is an interactive race data comparison tool that allows Ferrari F1 fans to compare the driving performance of current and past F1 drivers.",
+            "Fans can analyse the speed, gear changes, brake and throttle pressure, and G-force of Felipe Massa, Kimi Räikkönen and past Ferrari racing heroes. Ferrari's F1 test driver, Marc Gene, provides the commentary for each track and gives unique insights into the driver's experience."
+          ],
+          "year": "2013",
+          "type": "Website",
+          "company": "AKQA",
+
+          "assets": [
+            {
+              "url": "/img/portfolio/ferrari/1.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/ferrari/2.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/ferrari/3.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            },
+            {
+              "url": "/img/portfolio/ferrari/4.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MINI",
+      "logo": "",
+      "items": [
+        {
+          "title": "mini.com platform",
+          "previewImageUrl": "/img/project_tiles/mini.jpg",
+          "description": [
+            "N/A"
+          ],
+          "year": "2014-2015",
+          "type": "Website",
+          "company": "AKQA",
+
+          "assets": [
+            {
+              "url": "/img/portfolio/mini/1.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/mini/2.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/mini/6.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/mini/3.jpg",
+              "classNames": "col-xs-12 col-sm-12"
+            },
+            {
+              "url": "/img/portfolio/mini/5.jpg",
+              "classNames": "col-xs-12 col-sm-6"
+            }
           ]
         }
       ]

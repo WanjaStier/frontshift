@@ -11,13 +11,11 @@
   }
 
   hr {
-
-    margin: 0 $grid-gutter;
-    border-style: solid none none;
-    border-top: 1px solid gray;
     height: 0;
     width: 100%;
-    box-sizing: border-box;
+    margin: 0 $grid-gutter;
+    border-style: solid none none;
+    border-top: 1px solid darken($color-grey, 20%);
   }
 
   &__copyright {
@@ -27,6 +25,15 @@
   }
 
   &__email {
+    a,
+    a:visited {
+      color: $color-grey-dark;
+    }
+
+    a:hover {
+      color: darken($color-grey-dark, 40%);
+    }
+
    @include breakpoint(sm) {
      text-align: center;
      position: absolute;
