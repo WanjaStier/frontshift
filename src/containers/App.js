@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
-import Home from '../components/Home';
+import Home from '../components/home/Home';
 import Footer from '../components/footer/Footer';
 import Contact from '../components/Contact';
 import Services from '../components/services/Services';

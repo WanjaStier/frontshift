@@ -1,6 +1,30 @@
 @import 'styles/mixins';
 .fs-logo {
   user-select: none;
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    display: block;
+    transition: opacity .5s, right 1s ease-out;
+    position: absolute;
+    user-select: none;
+    z-index: 1;
+    top: 0;
+    right: -100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    background: linear-gradient( 45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.38) 20%, rgba(255,255,255,1) 100%);
+  }
+
+  &:hover {
+    &:after {
+      right: 0;
+      opacity: 1;
+    }
+  }
 
   img {
     display: block;

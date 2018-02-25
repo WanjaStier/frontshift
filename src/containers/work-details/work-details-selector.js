@@ -1,12 +1,16 @@
 import { createSelector } from 'reselect';
 
-function getCurrentProject(projects, props) {
- return projects.find(project => project.id === props.match.params.project)
+function getProjects(projects, props) {
+  const currProjectIndex = projects.findIndex(project => project.id === props.match.params.project);
+   return {
+     currentProject: projects[currProjectIndex],
+     nextProject: projects[currProjectIndex + 1]
+   }
 }
 
-export function makeGetCurrentProjectSelector() {
+export function makeGetProjectsSelector() {
   return createSelector(
-    [getCurrentProject],
-    (currentProject) => currentProject
+    [getProjects],
+    (projects) => projects
   );
 }

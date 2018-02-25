@@ -16,8 +16,27 @@ span {
   line-height: 1.5rem;
 }
 
+.fs-ruler {
+  height: 0;
+  width: 100%;
+  margin: 0 $grid-gutter;
+  border-style: solid none none;
+  border-top: 1px solid darken($color-grey, 20%);
+}
+
+.fs-text-link {
+  color: $color-grey-dark;
+  &:visited {
+    color: $color-grey-dark;
+  }
+
+  &:hover {
+    color: darken($color-grey-dark, 40%);
+  }
+}
 
 /*
+
  Vendor overrides
  */
 [class^="col-"] {

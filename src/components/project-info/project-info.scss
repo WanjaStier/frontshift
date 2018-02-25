@@ -4,6 +4,7 @@
 .fs-project-info {
   $text-margin: 15px;
   min-height: 200px;
+  width: 100%;
 
   &__title {
     @include font-size(18px);

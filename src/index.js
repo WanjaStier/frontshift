@@ -9,6 +9,7 @@ import { AppContainer } from 'react-hot-loader'
 import { createStore, applyMiddleware, combineReducers, compose  } from 'redux';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 import rootReducer from './reducers';
 import './styles/index.css';
 
@@ -69,4 +70,5 @@ if (module.hot) {
   })
 }
 
-registerServiceWorker();
+unregister();
+// registerServiceWorker();
