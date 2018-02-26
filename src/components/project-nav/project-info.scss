@@ -1,0 +1,13 @@
+.fs-project-nav {
+
+  .col-grid {
+    flex: 2;
+  }
+
+  &__nav-link {
+    margin: 25px 0;
+    &--next {
+      text-align: right;
+    }
+  }
+}

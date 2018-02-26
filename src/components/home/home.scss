@@ -1,0 +1,14 @@
+@import 'styles/mixins';
+
+.fs-home {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  background: url('/img/home_bg.jpg') no-repeat;
+  background-size: 100%;
+
+  @include breakpoint(sm) {
+    background-size: cover;
+    min-height: 500px;
+  }
+}

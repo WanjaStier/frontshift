@@ -6,7 +6,6 @@ import './nav.css';
 export default class NavComponent extends Component {
   isActiveLink(path, match, location) {
     return location.pathname.includes(path)
-    // isActive={this.isActiveLink.bind(this, path)}
   }
 
 
@@ -23,6 +22,7 @@ export default class NavComponent extends Component {
                 <NavLink exact
                          to={path}
                          className='fs-nav__link'
+                         isActive={this.isActiveLink.bind(this, path)}
                          activeClassName='fs-nav__link--active'>
                   {item.title}
                 </NavLink>
