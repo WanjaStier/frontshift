@@ -27,10 +27,10 @@ class HeaderContainer extends Component {
                   <NavComponent
                     pathname={this.props.pathname}
                     items={this.props.items} />
-                  <IconLink className="email-link align-end"
+             {/*     <IconLink className="email-link align-end"
                             linkUrl="mailto:hello@frontshift.com?subject=+++hello frontshift+++"
                             target="_self"
-                            iconSrc={emailIcon} />
+                            iconSrc={emailIcon} />*/}
                 </div>
 
               </div>
