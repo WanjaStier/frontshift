@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'mixins';
 
+html {
+ // scroll-behavior: smooth
+}
 body {
   background-color: $color-grey;
   color: $color-font;

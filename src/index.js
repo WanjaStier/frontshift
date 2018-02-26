@@ -70,5 +70,11 @@ if (module.hot) {
   })
 }
 
+if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+  document.documentElement.className += 'touch';
+} else {
+  document.documentElement.className += 'no-touch';
+}
+
 unregister();
 // registerServiceWorker();

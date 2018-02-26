@@ -4,7 +4,7 @@ import ProjectTileComponent from '../../components/project-tile/ProjectTileCompo
 import { workOverviewSelector } from './work-overview-selector';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import { getProjectLink } from '../../helpers/routing';
+import { getProjectLink } from '../../utils/routing';
 
 class WorkOverviewContainer extends Component {
   componentDidMount() {
