@@ -15,7 +15,7 @@ class WorkDetailsContainer extends Component {
       <div>
         <ProjectInfo project={this.props.currentProject} />
         <AssetGrid project={this.props.currentProject} />
-        <ProjectNav nextProject={this.props.nextProject} />
+        <ProjectNav showBackLink={true} nextProject={this.props.nextProject} />
       </div>
     )
   }

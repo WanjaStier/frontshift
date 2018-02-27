@@ -6,14 +6,16 @@ import './project-info.css';
 
 import '../../images/arrow.svg';
 
-export default function ProjectNav({nextProject}) {
+export default function ProjectNav({nextProject, showBackLink}) {
   return (
     <div  className="grid fs-project-nav">
       <div className="col-xs-6 col-sm-3 align-start col-grid">
-        <NavLink to='/work'
-                 className="fs-project-nav__nav-link fs-project-nav__nav-link--back fs-text-link">
-          Projects
-        </NavLink>
+        {showBackLink &&
+          <NavLink to='/work'
+                   className="fs-project-nav__nav-link fs-project-nav__nav-link--back fs-text-link">
+            Projects
+          </NavLink>
+        }
       </div>
       <div className="col-xs-6 col-sm-3 align-center col-grid">
         <a className="fs-text-link fs-project-nav__nav-link fs-project-nav__nav-link--top" href="javascript:void(0)" onClick={() => scrollToTop()}></a>
