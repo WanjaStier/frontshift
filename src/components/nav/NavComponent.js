@@ -103,6 +103,18 @@ export default class NavComponent extends Component {
     }
   }
 
+  componentDidMount() {
+    const activeLink = this.el.querySelector('.fs-nav__link--active');
+    if (activeLink) {
+      this.setState({
+        active: {
+          ...this.state.active,
+          curr: this.getTargetInfo(activeLink)
+        }
+      });
+    }
+  }
+
   render() {
     const highlightStyle = {
       width: this.state.isMouseOver ? this.state.active.temp.width : this.state.active.curr.width,
