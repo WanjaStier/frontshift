@@ -8,9 +8,14 @@ import About from '../components/about/About';
 import HeaderContainer from '../containers/header/HeaderContainer'
 import WorkDetailsContainer from '../containers/work-details/WorkDetailsContainer';
 import WorkOverviewContainer from '../containers/work-overview/WorkOverviewContainer';
-
+import Page from './Page';
 import { getAppData } from '../actions/app-actions';
 import './app.css';
+
+function firstChild(props) {
+  const childrenArray = React.Children.toArray(props.children);
+  return childrenArray[0] || null;
+}
 
 class App extends Component {
   componentDidMount() {
@@ -22,11 +27,11 @@ class App extends Component {
       <div className="fs-app">
         <HeaderContainer items={this.props.app.data.navItems}/>
         <div className="fs-app__content fs-app__pages">
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-          <Route exact path="/work/:client/:project" component={WorkDetailsContainer}/>
-          <Route exact path="/work" component={WorkOverviewContainer}/>
+          <Route exact path="/" component={Page(Home)}/>
+          <Route path="/about" component={Page(About)}/>
+          <Route path="/contact" component={Page(Contact)}/>
+          <Route exact path="/work/:client/:project" component={Page(WorkDetailsContainer)}/>
+          <Route exact path="/work" component={Page(WorkOverviewContainer)}/>
           <Footer/>
         </div>
 

@@ -25,6 +25,16 @@
     margin-top: $top-margin - 2;
   }
 
+  &__logo-link {
+    @include breakpoint(sm) {
+      max-width: 150px;
+    }
+
+    &--active {
+      pointer-events: none;
+    }
+  }
+
   .fs-logo {
     display: block;
     margin: 0 auto;
@@ -43,7 +53,7 @@
   }
 
   // TODO: remove?
-  .email-link {
+ /* .email-link {
     display: none;
     position: absolute;
     right: $grid-gutter;
@@ -56,5 +66,5 @@
     @include breakpoint(sm) {
       display: inherit;
     }
-  }
+  }*/
 }

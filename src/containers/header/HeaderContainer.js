@@ -17,7 +17,8 @@ class HeaderContainer extends Component {
               <div className="col-xs-12 col-sm-6 col-grid">
                 <NavLink exact
                          to='/'
-                         isActive={() => true}>
+                         className="fs-header__logo-link"
+                         activeClassName="fs-header__logo-link--active">
                   <FSLogoComponent/>
                 </NavLink>
 

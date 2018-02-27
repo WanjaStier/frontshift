@@ -13,7 +13,7 @@
     }
   }
 
-  &__pages {
+  &__page {
     @include breakpoint(sm) {
       margin-top: $header-heigth + 25px;
     }

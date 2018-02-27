@@ -2,7 +2,7 @@
 .fs-logo {
   user-select: none;
   position: relative;
-  cursor: pointer;
+  overflow: hidden;
 
   .no-touch & {
     &:after {
@@ -10,7 +10,6 @@
       display: block;
       transition: opacity .5s, right 1s ease-out;
       position: absolute;
-      user-select: none;
       z-index: 1;
       top: 0;
       right: -100%;
@@ -28,16 +27,9 @@
     }
   }
 
-
-
   img {
     display: block;
     width: 100%;
-    height: auto;
-  }
-
-  @include breakpoint(sm) {
-    max-width: 150px;
   }
 
 }

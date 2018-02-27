@@ -38,6 +38,31 @@ span {
   }
 }
 
+.h1 {
+  font-family: $font-regular;
+  @include font-size(18px);
+  margin: 0;
+}
+
+.fs-background:after {
+  content: '';
+  display: block;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  @include breakpoint(sm) {
+    background-size: cover;
+    min-height: 500px;
+  }
+}
+
+.paragraph {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+
 /*
 
  Vendor overrides

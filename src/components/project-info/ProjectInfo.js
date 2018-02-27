@@ -5,7 +5,7 @@ export default function ProjectInfo({project}) {
   return (
     <div className="fs-project-info grid">
       <div className="col-xs-12 col-sm-6 col-grid">
-        <span className="fs-project-info__title">{project.title}</span>
+        <h1 className="h1 fs-project-info__title">{project.title}</h1>
         <div className="fs-project-info__metadata">
           <div className="fs-project-info__metadata-item">
             <span className="fs-project-info__meta-key">Client:</span> <span className="fs-project-info__meta-value"> {project.client}</span>
@@ -25,7 +25,7 @@ export default function ProjectInfo({project}) {
         {
           project.description.map((paragraph, index) => {
             return (
-              <p key={index}>{ paragraph }</p>
+              <p className="paragraph" key={index}>{ paragraph }</p>
             )
           })
         }

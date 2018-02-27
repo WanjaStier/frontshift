@@ -1,20 +1,7 @@
 @import 'styles/mixins';
 
 .fs-about {
-  display: flex;
-  flex-direction: column;
-
-  &__background {
-
-    width: 100%;
-    min-height: 200px;
-    background: url('/img/about_bg.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    @include breakpoint(sm) {
-      background-size: cover;
-      min-height: 500px;
-
-    }
+  .fs-background:after {
+    background-image: url('/img/about_bg.jpg');
   }
 }
