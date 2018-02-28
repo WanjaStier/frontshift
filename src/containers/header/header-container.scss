@@ -1,4 +1,4 @@
-@import 'styles/variables.scss';
+@import 'styles/variables';
 @import 'styles/mixins';
 
 .fs-header {
@@ -16,18 +16,37 @@
 
   &__content-inner {
     padding: 20px;
+    position: relative;
     @include breakpoint(sm) {
       padding: 50px 0 0 0;
     }
+
+    &:before {
+      display: none;
+      @include breakpoint(sm) {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        height: 40px;
+        width: 1px;
+        right: $grid-gutter;
+        background: $color-grey;
+      }
+    }
+
   }
 
   .fs-nav {
-    margin-top: $top-margin - 2;
+    margin-top: $top-margin + 3;
   }
 
   &__logo-link {
+    max-width: 300px;
+    margin: 0 auto;
     @include breakpoint(sm) {
-      max-width: 150px;
+      max-width: 200px;
+      margin: 0;
     }
 
     &--active {
@@ -47,7 +66,7 @@
   .col-grid {
     &:last-child {
       @include breakpoint(sm) {
-       align-items: flex-end;
+    //   align-items: flex-end;
       }
     }
   }

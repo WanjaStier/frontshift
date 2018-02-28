@@ -53,7 +53,7 @@ function render(Component)  {
     <AppContainer>
       <Provider store={store}>
         <ConnectedRouter history={history}>
-          <Route component={Component} />
+          <Component />
         </ConnectedRouter>
       </Provider>
     </AppContainer>,

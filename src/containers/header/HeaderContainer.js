@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import NavComponent from '../../components/nav/NavComponent';
 import FSLogoComponent from '../../components/logo/FSLogo';
 import { headerContainerSelector } from './header-container-selector';
-import IconLink from '../../components/icon-link/IconLink'
 import './header-container.css';
-import emailIcon from '../../images/e-mail-envelope.svg';
 import {NavLink} from 'react-router-dom';
 class HeaderContainer extends Component {
   render() {
@@ -21,7 +20,6 @@ class HeaderContainer extends Component {
                          activeClassName="fs-header__logo-link--active">
                   <FSLogoComponent/>
                 </NavLink>
-
               </div>
               <div className="col-xs-12 col-sm-6 col-grid">
                 <div>
@@ -45,6 +43,6 @@ class HeaderContainer extends Component {
   }
 }
 
-export default  connect(headerContainerSelector, {
+export default  withRouter(connect(headerContainerSelector, {
   action: () => {}
-})(HeaderContainer);
+})(HeaderContainer));

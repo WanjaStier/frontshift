@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Route } from 'react-router-dom';
+import { Route, withRouter} from 'react-router-dom';
 import Home from '../components/home/Home';
 import Footer from '../components/footer/Footer';
 import Contact from '../components/contact/Contact';
@@ -11,11 +11,6 @@ import WorkOverviewContainer from '../containers/work-overview/WorkOverviewConta
 import Page from './Page';
 import { getAppData } from '../actions/app-actions';
 import './app.css';
-
-function firstChild(props) {
-  const childrenArray = React.Children.toArray(props.children);
-  return childrenArray[0] || null;
-}
 
 class App extends Component {
   componentDidMount() {
@@ -34,7 +29,6 @@ class App extends Component {
           <Route exact path="/work" component={Page(WorkOverviewContainer)}/>
           <Footer/>
         </div>
-
       </div>
 
     ) : null;
@@ -45,5 +39,4 @@ function mapStateToProps(state) {
   return state;
 }
 
-
-export default connect(mapStateToProps, {getAppData})(App);
+export default withRouter(connect(mapStateToProps, {getAppData})(App));

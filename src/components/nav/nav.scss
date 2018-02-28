@@ -5,7 +5,7 @@
   &__list-item {
     text-align: center;
     &:not(:last-child) {
-      margin-bottom: 40px;
+ //     margin-bottom: 40px;
     }
 
     @include breakpoint(sm) {
@@ -20,13 +20,14 @@
   }
 
   &__active-highlight {
+    pointer-events: none;
     visibility: hidden;
     position: absolute;
     height: 1px;
     width: 100px;
     top: 18px;
     left: 0;
-    background: lighten($color-black, 80%);
+    background: lighten($color-black, 50%);
     transition: all .3s  ease-in-out ;
     @include breakpoint(sm) {
       visibility: visible;
@@ -96,7 +97,7 @@
 
     &--active,
     &:hover {
-      color: lighten($color-black, 60%);
+      color: lighten($color-black, 40%);
     }
   }
 }

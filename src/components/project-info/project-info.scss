@@ -7,8 +7,9 @@
   width: 100%;
 
   &__title {
-
-
+    @include breakpoint(sm) {
+      margin: 0;
+    }
   }
 
   &__metadata {

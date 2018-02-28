@@ -5,6 +5,7 @@ html {
  // scroll-behavior: smooth
 }
 body {
+  overflow-x: hidden;
   background-color: $color-grey;
   color: $color-font;
   font-family: $font-regular;
@@ -40,8 +41,11 @@ span {
 
 .h1 {
   font-family: $font-regular;
-  @include font-size(18px);
-  margin: 0;
+  @include font-size(24px);
+
+  @include breakpoint(sm) {
+    @include font-size(20px);
+  }
 }
 
 .fs-background:after {

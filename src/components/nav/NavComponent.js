@@ -1,14 +1,13 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {NavLink} from 'react-router-dom';
 import './nav.css';
 
-export default class NavComponent extends Component {
+export default class NavComponent extends PureComponent {
   constructor(props) {
     super(props);
     this.getListItem = this.getListItem.bind(this);
     this.getTargetInfo = this.getTargetInfo.bind(this);
-    this.onItemClicked = this.onItemClicked.bind(this);
     this.onItemMouseOver = this.onItemMouseOver.bind(this);
     this.onItemMouseOut = this.onItemMouseOut.bind(this);
     this.state = this.getInitialState();
@@ -26,15 +25,6 @@ export default class NavComponent extends Component {
 
   isActiveLink(path, match, location) {
     return location.pathname.includes(path);
-  }
-
-  onItemClicked(event) {
-    this.setState({
-      active: {
-        ...this.state.active,
-        curr: this.getTargetInfo(event.target)
-      }
-    });
   }
 
   onItemMouseOver(event) {
@@ -61,8 +51,8 @@ export default class NavComponent extends Component {
   getTargetInfo(target) {
     if (!target) {
       return {
-        x:  `${document.documentElement.clientWidth}px`,
-        width: '100px'
+        x:  '0px',
+        width: '0px'
       };
     }
     const style = window.getComputedStyle(target);
@@ -100,11 +90,19 @@ export default class NavComponent extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.pathname === '/') {
       this.setState(this.getInitialState());
+    } else {
+      this.setActiveLink(nextProps)
     }
   }
 
   componentDidMount() {
-    const activeLink = this.el.querySelector('.fs-nav__link--active');
+    this.setActiveLink();
+  }
+
+  setActiveLink(nextProps) {
+    const { items, pathname } = nextProps || this.props;
+    const activeIndex = items.findIndex(item => pathname.includes(item.key));
+    const activeLink = this.el.querySelectorAll('.fs-nav__link')[activeIndex];
     if (activeLink) {
       this.setState({
         active: {

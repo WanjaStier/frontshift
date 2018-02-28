@@ -1,8 +1,11 @@
 @import 'styles/mixins';
 
 .fs-contact {
-  display: flex;
-  flex-direction: column;
+  .h1 {
+    @include breakpoint(sm) {
+      margin: 0;
+    }
+  }
 
   .fs-background:after {
     background-image: url('/img/contact_bg.jpg');
