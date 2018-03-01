@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import createHistory from 'history/createBrowserHistory'
+
 import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk';
 import App from './containers/App';
@@ -10,6 +11,8 @@ import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './reducers';
 import './styles/index.css';
+
+
 
 const history = createHistory();
 
