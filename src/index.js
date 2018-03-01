@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {  Route } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory'
 import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk';
@@ -9,7 +8,6 @@ import { AppContainer } from 'react-hot-loader'
 import { createStore, applyMiddleware, combineReducers, compose  } from 'redux';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
-import { unregister } from './registerServiceWorker';
 import rootReducer from './reducers';
 import './styles/index.css';
 
@@ -76,5 +74,4 @@ if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
   document.documentElement.className += 'no-touch';
 }
 
-unregister();
-// registerServiceWorker();
+registerServiceWorker();
