@@ -13,21 +13,38 @@ export default class About extends PureComponent {
         </div>
         <div className="col-xs-12 col-sm-6 col-grid">
           <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget enim eu nisl rhoncus interdum. Etiam vel laoreet sem, ut commodo purus. Nulla facilisi. Mauris id consequat nibh. Phasellus ac justo vehicula, pulvinar sapien in, condimentum dui. Nullam tincidunt metus sollicitudin elit lobortis feugiat. Nam ultricies commodo feugiat. Phasellus laoreet blandit ultrices.
-
-            Vivamus ultrices id nulla suscipit interdum. Aliquam erat volutpat. Sed vestibulum accumsan turpis, consequat ullamcorper enim. Suspendisse et nunc volutpat, commodo nisl sit amet, feugiat ex. Vivamus porttitor velit in magna condimentum, sit amet tincidunt ante aliquam. Praesent ac rutrum nisl. Vestibulum vel mi et lectus tristique elementum. Proin dictum sed magna ultrices imperdiet. Sed accumsan massa sodales dui egestas dictum.
-
-
+            We work in a collaborative partnership with businesses and agencies to create cutting edge applications and websites using the best modern and widely adopted standards of today.
+          </p>
+          <p className="paragraph">
+            We equally focus on delivering pixel perfect and performance optimsed user experiences, as well as scalable, modularised codebases which are easy to maintain and extend, employing the highest standards and coding practices.
+          </p>
+          <p className="paragraph">
+          We have 15+ years of experience in the industry, covering a wide range of internet technologies.
           </p>
         </div>
         <div className="col-xs-12 col-sm-6 col-grid">
           <h1 className="h1">Our services</h1>
         </div>
         <div className="col-xs-12 col-sm-6 col-grid">
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget enim eu nisl rhoncus interdum. Etiam vel laoreet sem, ut commodo purus. Nulla facilisi. Mauris id consequat nibh. Phasellus ac justo vehicula, pulvinar sapien in, condimentum dui. Nullam tincidunt metus sollicitudin elit lobortis feugiat. Nam ultricies commodo feugiat. Phasellus laoreet blandit ultrices.
-
-            Vivamus ultrices id nulla suscipit interdum. Aliquam erat volutpat. Sed vestibulum accumsan turpis, consequat ullamcorper enim. Suspendisse et nunc volutpat, commodo nisl sit amet, feugiat ex. Vivamus porttitor velit in magna condimentum, sit amet tincidunt ante aliquam. Praesent ac rutrum nisl. Vestibulum vel mi et lectus tristique elementum. Proin dictum sed magna ultrices imperdiet. Sed accumsan massa sodales dui egestas dictum.
+          <h2>Programming Languages & Methodologies:</h2>
+          <p className="fs-about__service-list">
+            ES6 / ES5/ OOCSS / SASS / BEM / HTML / ActionScript /
+          </p>
+          <h2>Libraries & Frameworks:</h2>
+          <p className="fs-about__service-list">
+            React / Redux / Reselect / AngularJS / Backbone  / jQuery / PixiJS / CreateJS /
+          </p>
+          <h2>Testing:</h2>
+          <p className="fs-about__service-list">
+            Jest / Enzyme / Karma / Mocha / Protractor / Chai / Sinon
+          </p>
+          <h2>Build & Deployments:</h2>
+          <p className="fs-about__service-list">
+            Webpack / Gulp / Grunt / Jenkins /
+          </p>
+          <h2>Other:</h2>
+          <p className="fs-about__service-list">
+            Audio production / Sound Design & Mastering / Photoshop / Illustrator / Sketch / Figma
           </p>
         </div>
         <div className="col-xs-12 col-sm-12 col-grid fs-background" />

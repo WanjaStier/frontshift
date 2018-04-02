@@ -7,7 +7,18 @@
     }
   }
 
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+  }
+
+  &__service-list {
+    color: $color-grey-dark;
+  }
+
   .fs-background:after {
     background-image: url('/img/about_bg.jpg');
   }
+
 }
